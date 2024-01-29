@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Traningsdagbok.Models.ExerciseSession>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="text-center">
+    <h1>Exercise Sessions</h1>
+</div>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create Session</a>
+    <a asp-controller="Exercises" asp-action="Create" class="btn btn-primary">Create Exercise</a>
+
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Quantity
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Exercise.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Exercise.Description)
+                </td>
+                <td>
+                    @item.Date.ToString("yyyy-MM-dd")
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+               
+                <td>
+                 
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
