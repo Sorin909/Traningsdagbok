@@ -1210,3 +1210,4 @@ C:\Infosolutions\Utveckling\Mina projekt\Traningsdagbok\Traningsdagbok\obj\Debug
 C:\Infosolutions\Utveckling\Mina projekt\Traningsdagbok\Traningsdagbok\obj\Debug\net8.0\Traningsdagbok.pdb
 C:\Infosolutions\Utveckling\Mina projekt\Traningsdagbok\Traningsdagbok\obj\Debug\net8.0\Traningsdagbok.genruntimeconfig.cache
 C:\Infosolutions\Utveckling\Mina projekt\Traningsdagbok\Traningsdagbok\obj\Debug\net8.0\ref\Traningsdagbok.dll
+C:\Infosolutions\Utveckling\Mina projekt\Traningsdagbok\Traningsdagbok\obj\Debug\net8.0\Traningsdagbok.sourcelink.json
